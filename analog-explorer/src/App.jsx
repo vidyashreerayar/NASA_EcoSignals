@@ -42,7 +42,7 @@ export default function App() {
     <div className="app">
       <aside className="sidebar">
         <header>
-          <h1>Terrestrial Analog Explorer</h1>
+          <h1>EcoSignals Analog Explorer</h1>
           <p className="muted">
             Which places on Earth are most like a given Moon or Mars site? Scores combine NASA POWER climate data with
             geology features.

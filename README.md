@@ -1,4 +1,4 @@
-# Terrestrial Analog Explorer
+# EcoSignals Analog Explorer
 
 **Which places on Earth are most like a given Moon or Mars site, and which of them are not yet being used?**
 
