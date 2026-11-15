@@ -108,3 +108,7 @@ Python (pandas, numpy, rasterio, scipy, Pillow) · React · Vite · Leaflet / re
 ## Use of AI
 
 This project was built with help from Claude (Anthropic): it assisted with scoping, the Python data pipeline, the React app and documentation. All data and results come from NASA datasets; we ran and checked every step ourselves.
+
+## Use of AI
+
+This project was built with help from Claude (Anthropic): it assisted with the Python data pipeline, the React app and documentation. All data and results come from NASA datasets; the team ran and checked every step.
