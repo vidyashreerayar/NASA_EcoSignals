@@ -104,3 +104,7 @@ earth_sites_scored.csv  results table
 ## Tech
 
 Python (pandas, numpy, rasterio, scipy, Pillow) · React · Vite · Leaflet / react-leaflet · deployed on Vercel
+
+## Use of AI
+
+This project was built with help from Claude (Anthropic): it assisted with scoping, the Python data pipeline, the React app and documentation. All data and results come from NASA datasets; we ran and checked every step ourselves.
