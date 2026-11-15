@@ -1,0 +1,33 @@
+id,name,country,status,best_match,best_score,score_MOON_SP,score_MOON_PIT,score_MOON_HADLEY,score_MARS_JEZERO,score_MARS_GALE,score_MARS_ARCADIA,score_MARS_ARSIA,lat,lon,T_mean,T_range,precip,ndvi,basalt,anorthosite,impact,evaporites,clays_sediments,ground_ice,caves,regolith,polar_dark,used_for
+UMMJIRSAN,Harrat Khaybar - Umm Jirsan lava tube,Saudi Arabia,new,MOON_PIT,72.4,32.0,72.4,55.5,42.0,42.0,55.4,72.0,25.58,39.6,28.6,29.2,26,0.02,1,0,0,0,0,0,1,1,0,1.5 km lava tube in hyper-arid basalt; not used as analog yet
+DRYVALLEYS,McMurdo Dry Valleys - Beacon Valley,Antarctica,known,MARS_ARCADIA,71.6,51.6,57.1,58.5,51.6,53.1,71.6,54.9,-77.85,160.6,-35.2,6.5,142,0.0,1,0,0,1,0,1,0,1,1,Mars ground-ice & cold-desert analog
+PINACATE,El Pinacate volcanic field,Mexico,new,MOON_PIT,66.6,25.9,66.6,49.5,35.9,35.9,49.2,65.9,31.77,-113.5,23.4,22.5,139,0.05,1,0,0,0,0,0,1,1,0,"Apollo-era training, since lapsed; maar craters and dunes"
+KAMIL,Kamil Crater,Egypt,new,MOON_HADLEY,66.0,52.4,49.8,66.0,52.4,52.4,49.1,49.1,22.02,26.09,23.2,24.8,0,0.0,0,0,1,0,0,0,0,1,0,Pristine small crater in hyper-arid desert
+HOLUHRAUN,Holuhraun lava field,Iceland,known,MARS_ARCADIA,65.3,35.3,54.7,52.6,45.3,45.6,65.3,48.6,64.87,-16.83,-4.4,4.9,861,0.02,1,0,0,0,1,1,0,1,0,NASA SAND/RISE2 rover tests
+LANZAROTE,Lanzarote - Timanfaya & La Corona tube,Spain,known,MOON_PIT,65.2,24.4,65.2,48.1,34.4,34.4,47.7,64.4,29.0,-13.75,21.3,4.5,110,0.05,1,0,0,0,0,0,1,1,0,ESA PANGAEA astronaut geology training
+TOLBACHIK,Tolbachik lava fields,Russia,new,MARS_ARCADIA,64.5,34.5,54.5,52.4,34.5,34.9,64.5,47.8,55.83,160.33,-6.8,10.8,1894,0.05,1,0,0,0,0,1,0,1,0,Fresh 2012-13 basalt flows on permafrost
+MAUNAKEA,Mauna Kea upper slopes,USA,known,MARS_ARCADIA,63.8,33.8,47.9,47.5,33.8,33.9,63.8,47.2,19.82,-155.47,22.4,7.7,1610,0.05,1,0,0,0,0,1,0,1,0,PISCES ISRU tests; lunar simulant source
+KILAUEA,Kilauea - Ka'u Desert,USA,known,MOON_PIT,61.8,20.8,61.8,44.6,30.8,30.8,44.1,60.8,19.35,-155.35,19.9,11.5,1814,0.1,1,0,0,0,0,0,1,1,0,Artemis geology training
+CRATERSMOON,Craters of the Moon NM,USA,known,MOON_PIT,61.7,18.1,61.7,43.5,28.1,28.2,41.5,58.1,43.42,-113.52,5.2,19.7,416,0.15,1,0,0,0,0,0,1,1,0,Apollo training; NASA FINESSE lava studies
+EREBUS,Mount Erebus fumarolic ice caves,Antarctica,new,MOON_PIT,58.6,37.5,58.6,40.8,27.5,28.6,50.9,50.9,-77.53,167.15,-19.9,5.8,161,0.0,1,0,0,0,0,1,1,0,1,"Dark, cold caves: lunar polar cave/cold-trap proxy"
+TIBESTI,Tibesti - Emi Koussi caldera,Chad,new,MOON_PIT,57.7,33.8,57.7,57.4,43.8,43.8,57.1,57.1,19.79,18.55,24.3,28.8,15,0.01,1,0,0,0,0,0,0,1,0,"Shield-volcano caldera in desert, Tharsis-like"
+PAJONALES,Salar de Pajonales (Altiplano),Chile,new,MOON_PIT,57.1,30.0,57.1,55.5,50.0,50.1,53.4,53.4,-25.15,-68.83,4.6,29.9,135,0.01,1,0,0,1,0,0,0,1,0,"Gypsum domes, extreme UV, thin-air conditions"
+DEATHVALLEY,Death Valley - Badwater & Ubehebe,USA,known,MARS_JEZERO,57.0,27.0,51.3,50.8,57.0,57.0,50.3,50.3,36.25,-116.83,19.6,25.7,124,0.05,1,0,0,1,1,0,0,1,0,Rover tests; salt/playa Mars analog
+HAUGHTON,"Haughton Impact Crater, Devon Island",Canada,known,MOON_SP,55.3,55.3,39.8,54.7,45.3,46.0,48.6,31.9,75.38,-89.68,-14.8,6.3,310,0.05,0,0,1,1,0,1,0,1,1,Haughton-Mars Project; Moon/Mars EVA
+LUT,Lut Desert - Gandom Beryan basalt plateau,Iran,new,MOON_PIT,53.0,29.3,53.0,52.8,49.3,49.3,52.6,52.6,30.4,59.05,28.0,27.4,80,0.0,1,0,0,1,0,0,0,1,0,Hottest LST on Earth (MODIS); yardangs like Medusae Fossae
+QAIDAM,Qaidam Basin - Dalangtan playa,China,new,MARS_GALE,49.5,29.4,39.8,38.2,49.4,49.5,36.1,36.1,38.5,91.5,4.6,25.8,51,0.0,0,0,0,1,1,0,0,1,0,Sulfate/chloride salts + yardangs at altitude
+ATACAMA,Atacama Desert - Yungay,Chile,known,MARS_JEZERO,46.7,36.7,44.4,43.8,46.7,46.7,43.3,43.3,-24.08,-70.0,18.9,28.6,7,0.02,0,0,0,1,0,0,0,1,0,NASA ARADS rover drilling; Mars life-detection
+METEORCRATER,Meteor (Barringer) Crater,USA,known,MOON_HADLEY,46.5,32.1,31.0,46.5,32.1,32.1,28.8,28.8,35.03,-111.02,11.6,21.1,416,0.1,0,0,1,0,0,0,0,1,0,Apollo crater geology training
+DALLOL,Danakil Depression - Dallol,Ethiopia,new,MARS_JEZERO,46.5,16.5,33.6,33.3,46.5,46.5,33.2,33.2,14.24,40.3,27.6,22.2,449,0.02,1,0,0,1,1,0,0,0,0,"Hyper-saline, acidic hydrothermal; polyextreme habitability"
+SVALBARD,Svalbard - Bockfjorden volcanics,Norway,known,MARS_ARCADIA,44.6,31.3,34.9,32.8,21.3,21.8,44.6,28.0,79.45,13.4,-8.1,4.1,664,0.1,1,0,0,0,0,1,0,0,1,AMASE instrument tests
+MDRS,"Mars Desert Research Station, Hanksville",USA,known,MARS_JEZERO,43.8,23.8,32.5,31.5,43.8,43.8,30.5,30.5,38.41,-110.79,12.2,21.9,241,0.08,0,0,0,1,1,0,0,1,0,Crew habitat simulations
+LAVABEDS,Lava Beds NM (ice caves),USA,known,MOON_PIT,40.6,14.6,40.6,22.7,14.6,14.7,37.9,37.9,41.71,-121.51,9.0,17.8,675,0.2,1,0,0,0,0,1,1,0,0,NASA BRAILLE cave robotics
+WADIRUM,Wadi Rum,Jordan,new,MARS_JEZERO,40.0,30.0,37.7,37.1,40.0,40.0,36.6,36.6,29.57,35.42,19.7,26.9,40,0.02,0,0,0,0,1,0,0,1,0,Red sandstone desert (mostly film use so far)
+NAMIB,Namib gravel plains - Gobabeb,Namibia,new,MARS_JEZERO,38.5,28.5,35.8,35.5,38.5,38.5,35.2,35.2,-23.56,15.04,24.0,25.4,66,0.02,0,0,0,1,0,0,0,1,0,Fog-fed hyper-arid desert; gypsum crusts
+GOBI,Gobi - Khermen Tsav red beds,Mongolia,new,MARS_GALE,37.2,27.1,36.5,35.2,37.1,37.2,33.8,33.8,43.47,99.83,8.9,21.7,73,0.03,0,0,0,0,1,0,0,1,0,Cold desert with layered red sediments
+AXELHEIBERG,Axel Heiberg - Lost Hammer spring,Canada,known,MOON_SP,37.0,37.0,24.7,23.7,27.0,28.2,33.7,17.0,79.08,-90.35,-20.8,6.0,292,0.03,0,0,0,1,0,1,0,0,1,Cold saline spring (Europa/Mars brines)
+UNDARA,Undara lava tubes,Australia,new,MOON_PIT,35.1,1.2,35.1,18.1,11.2,11.2,17.8,34.5,-18.25,144.6,24.9,19.7,843,0.4,1,0,0,0,0,0,1,0,0,Large lava-tube system (vegetation lowers score)
+LONAR,Lonar Crater,India,new,MOON_HADLEY,35.0,11.5,18.6,35.0,31.5,31.5,18.1,18.1,19.98,76.51,27.1,20.4,843,0.35,1,0,1,1,0,0,0,0,0,Impact crater in basalt (Moon/Mars-like target rock)
+PILBARA,Pilbara - Dresser Formation,Australia,known,MARS_JEZERO,29.1,9.1,26.1,25.9,29.1,29.1,25.8,25.8,-21.15,119.42,29.2,24.0,405,0.15,1,0,0,0,1,0,0,0,0,Early-life biosignatures for Mars sample science
+MISTASTIN,Mistastin Lake crater,Canada,new,MOON_HADLEY,21.8,20.7,7.2,21.8,10.7,11.1,0.7,0.7,55.88,-63.31,-6.1,10.1,949,0.4,0,1,1,0,0,0,0,0,0,Impact into anorthosite: lunar highland analog
+RIOTINTO,Rio Tinto,Spain,known,MARS_JEZERO,21.7,1.7,2.8,2.2,21.7,21.7,1.7,1.7,37.72,-6.56,18.8,18.9,467,0.3,0,0,0,1,1,0,0,0,0,Acidic sulfate (jarosite) Mars analog; MARTE drilling

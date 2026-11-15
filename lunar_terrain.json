@@ -1,0 +1,12 @@
+{
+ "elevation_m": 1338,
+ "mean_slope_deg": 29.6,
+ "pct_under_8deg": 4.8,
+ "relief_m": 5824,
+ "roughness_m": 1786,
+ "radius_km": 10.0,
+ "map_x": 0.5,
+ "map_y": 0.4967,
+ "extent_km": 915,
+ "source": "LRO LOLA LDEM 240 m polar (NASA PDS)"
+}

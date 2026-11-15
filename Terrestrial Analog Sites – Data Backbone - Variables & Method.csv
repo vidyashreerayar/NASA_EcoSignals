@@ -1,0 +1,13 @@
+﻿Variable,Unit,Earth data source,Moon reference source,Mars reference source,How it enters the score
+Mean surface temperature,°C,"MODIS LST MOD11A2 (Earthdata), annual mean of day+night",LRO Diviner GDR / polar products (PDS Geosciences),"MSL REMS, Mars 2020 MEDA, MCS/TES (PDS Atmospheres)","Gaussian similarity, σ = 20 °C; target clamped to Earth range (≥ −55 °C)"
+Diurnal temperature range,°C,MODIS LST day minus night,Diviner day/night maps,REMS / MEDA ground temperature,"Gaussian, σ = 12 °C; target clamped to ≤ 45 °C"
+Precipitation (aridity),mm/yr,GPM IMERG monthly (Earthdata),0 (no liquid water),0,"Gaussian on log10(precip+1), σ = 0.8"
+Vegetation (NDVI),0–1,"MODIS MOD13A3 NDVI; Worldview for visual check",0,0,"Gaussian, σ = 0.12"
+Elevation / slope,m,NASADEM / SRTM (Earthdata),LOLA DEM,MOLA / HiRISE DEM,"Context only (site card); add slope later for landing safety"
+Surface roughness (optional),dB,Sentinel-1 (Copernicus) or RADARSAT-1/RCM (CSA),LRO Mini-RF,MRO SHARAD,Partner-agency layer for 3–5 showcase sites
+Geology / feature flags,yes/no,Literature + Sentinel-2 / Worldview imagery,"LROC, Clementine, M3","CRISM, HiRISE, SWIM ice maps",Share of target's features present at the site (recall)
+,,,,,
+SCORING,,Score (0–100) = 50% climate similarity + 50% geology/feature match,,,
+Clamping,,"Earth can't reach −170 °C, so Moon/Mars targets are clamped to the most extreme values Earth can reach; sites are ranked by how close they get",,,
+Validation,,"Known analogs (Dry Valleys, Death Valley, Lanzarote, Haughton) must rank in each target's top 6. They do, so the method is credible",,,
+Next step,,Replace the ‘Estimate’ climate values with values extracted from MODIS/GPM for each site’s coordinates (Python + earthaccess or AppEEARS),,,

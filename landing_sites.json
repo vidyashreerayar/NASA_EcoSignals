@@ -1,0 +1,84 @@
+{
+ "sites": [
+  {
+   "rank": 1,
+   "lat": -88.11,
+   "lon": 177.24,
+   "score": 68.5,
+   "sunlight_pct": 38.2,
+   "flat_pct": 91.4,
+   "ice_km": 0.3,
+   "elevation_m": 339,
+   "pole_km": 57.3,
+   "map_x": 0.518,
+   "map_y": 0.8589
+  },
+  {
+   "rank": 2,
+   "lat": -88.611,
+   "lon": 105.03,
+   "score": 65.3,
+   "sunlight_pct": 29.4,
+   "flat_pct": 100.0,
+   "ice_km": 1.5,
+   "elevation_m": -841,
+   "pole_km": 42.1,
+   "map_x": 0.7553,
+   "map_y": 0.5691
+  },
+  {
+   "rank": 3,
+   "lat": -88.645,
+   "lon": 73.89,
+   "score": 64.4,
+   "sunlight_pct": 30.5,
+   "flat_pct": 96.3,
+   "ice_km": 1.5,
+   "elevation_m": -916,
+   "pole_km": 41.1,
+   "map_x": 0.7477,
+   "map_y": 0.4294
+  },
+  {
+   "rank": 4,
+   "lat": -87.738,
+   "lon": 133.16,
+   "score": 62.7,
+   "sunlight_pct": 25.5,
+   "flat_pct": 96.3,
+   "ice_km": 1.2,
+   "elevation_m": 41,
+   "pole_km": 68.6,
+   "map_x": 0.8138,
+   "map_y": 0.7943
+  },
+  {
+   "rank": 5,
+   "lat": -87.759,
+   "lon": -69.65,
+   "score": 62.4,
+   "sunlight_pct": 34.3,
+   "flat_pct": 88.9,
+   "ice_km": 2.1,
+   "elevation_m": -2378,
+   "pole_km": 68.0,
+   "map_x": 0.1021,
+   "map_y": 0.3529
+  },
+  {
+   "rank": 6,
+   "lat": -88.285,
+   "lon": -26.15,
+   "score": 62.2,
+   "sunlight_pct": 19.1,
+   "flat_pct": 100.0,
+   "ice_km": 0.7,
+   "elevation_m": -1818,
+   "pole_km": 52.0,
+   "map_x": 0.3574,
+   "map_y": 0.2087
+  }
+ ],
+ "method": "2 km patches within 70 km of the pole; score = 0.45 sunlight + 0.35 flatness (<8 deg) + 0.2 closeness to permanent shadow",
+ "source": "LOLA 240 m DEM; Mazarico et al. 2011 average illumination & PSR maps (NASA GSFC PGDA)"
+}

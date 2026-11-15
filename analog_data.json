@@ -1,0 +1,775 @@
+{
+ "flags": [
+  "basalt",
+  "anorthosite",
+  "impact",
+  "evaporites",
+  "clays_sediments",
+  "ground_ice",
+  "caves",
+  "regolith",
+  "polar_dark"
+ ],
+ "earth_bounds": {
+  "T_mean": [
+   -55,
+   35
+  ],
+  "T_range": [
+   0,
+   45
+  ]
+ },
+ "scales": {
+  "T_mean": 20,
+  "T_range": 12,
+  "logp": 0.8,
+  "ndvi": 0.12
+ },
+ "climate_weights": {
+  "T_mean": 1,
+  "T_range": 1,
+  "logp": 1.5,
+  "ndvi": 1.5
+ },
+ "targets": [
+  {
+   "id": "MOON_SP",
+   "body": "Moon",
+   "name": "Lunar South Pole (Shackleton rim + cold traps)",
+   "lat": -89.9,
+   "lon": 0.0,
+   "T_mean": -170,
+   "T_range": 60,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "anorthosite",
+    "impact",
+    "ground_ice",
+    "regolith",
+    "polar_dark"
+   ],
+   "source": "LRO Diviner polar GDR (PSRs ~25-40 K, Paige et al. 2010); LOLA DEM; LEND/Mini-RF ice",
+   "note": "Artemis landing region. Earth cannot match the cold: score uses clamped targets."
+  },
+  {
+   "id": "MOON_PIT",
+   "body": "Moon",
+   "name": "Mare Tranquillitatis pit (lava-tube skylight)",
+   "lat": 8.33,
+   "lon": 33.22,
+   "T_mean": -23,
+   "T_range": 300,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "source": "LRO Diviner (Horvath et al. 2022: pit interior ~17 C stable vs surface -173..+127 C); LROC NAC",
+   "note": "Habitat-in-a-cave concept."
+  },
+  {
+   "id": "MOON_HADLEY",
+   "body": "Moon",
+   "name": "Hadley Rille / Apollo 15 (mare basalt, lava channel)",
+   "lat": 26.13,
+   "lon": 3.63,
+   "T_mean": -30,
+   "T_range": 280,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "impact",
+    "regolith"
+   ],
+   "source": "LRO Diviner; LOLA; LROC NAC; Apollo 15 samples (PDS Geosciences)",
+   "note": "Mare basalt plains next to Imbrium basin rim."
+  },
+  {
+   "id": "MARS_JEZERO",
+   "body": "Mars",
+   "name": "Jezero Crater (delta, Perseverance)",
+   "lat": 18.38,
+   "lon": 77.58,
+   "T_mean": -55,
+   "T_range": 70,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "impact",
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "source": "Mars 2020 MEDA (PDS Atmospheres); CRISM clays/carbonates; HiRISE/CTX DEM",
+   "note": "Ancient lake delta; biosignature target."
+  },
+  {
+   "id": "MARS_GALE",
+   "body": "Mars",
+   "name": "Gale Crater (Mount Sharp, Curiosity)",
+   "lat": -4.59,
+   "lon": 137.44,
+   "T_mean": -50,
+   "T_range": 85,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "impact",
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "source": "MSL REMS ground temp (PDS Atmospheres); CheMin mineralogy; HiRISE",
+   "note": "Layered lake sediments, sulfates, clays."
+  },
+  {
+   "id": "MARS_ARCADIA",
+   "body": "Mars",
+   "name": "Arcadia Planitia (shallow ground ice)",
+   "lat": 40.0,
+   "lon": -160.0,
+   "T_mean": -70,
+   "T_range": 70,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "ground_ice",
+    "regolith"
+   ],
+   "source": "SWIM ice-consistency maps (PSI/NASA); SHARAD radar; MCS/TES temps",
+   "note": "Leading candidate for a crewed base: water ice within ~1 m."
+  },
+  {
+   "id": "MARS_ARSIA",
+   "body": "Mars",
+   "name": "Arsia Mons flank pits / lava tubes",
+   "lat": -8.3,
+   "lon": -120.1,
+   "T_mean": -75,
+   "T_range": 80,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "source": "THEMIS thermal (Cushing et al. 2007 cave skylights); HiRISE; MOLA",
+   "note": "Radiation-shielded habitat concept."
+  }
+ ],
+ "sites": [
+  {
+   "id": "ATACAMA",
+   "name": "Atacama Desert - Yungay",
+   "country": "Chile",
+   "lat": -24.08,
+   "lon": -70.0,
+   "elev": 1000,
+   "status": "known",
+   "T_mean": 16,
+   "T_range": 30,
+   "precip": 1,
+   "ndvi": 0.02,
+   "flags": [
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "NASA ARADS rover drilling; Mars life-detection"
+  },
+  {
+   "id": "HAUGHTON",
+   "name": "Haughton Impact Crater, Devon Island",
+   "country": "Canada",
+   "lat": 75.38,
+   "lon": -89.68,
+   "elev": 200,
+   "status": "known",
+   "T_mean": -16,
+   "T_range": 8,
+   "precip": 150,
+   "ndvi": 0.05,
+   "flags": [
+    "impact",
+    "evaporites",
+    "ground_ice",
+    "regolith",
+    "polar_dark"
+   ],
+   "used_for": "Haughton-Mars Project; Moon/Mars EVA"
+  },
+  {
+   "id": "DEATHVALLEY",
+   "name": "Death Valley - Badwater & Ubehebe",
+   "country": "USA",
+   "lat": 36.25,
+   "lon": -116.83,
+   "elev": -60,
+   "status": "known",
+   "T_mean": 25,
+   "T_range": 30,
+   "precip": 60,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Rover tests; salt/playa Mars analog"
+  },
+  {
+   "id": "DRYVALLEYS",
+   "name": "McMurdo Dry Valleys - Beacon Valley",
+   "country": "Antarctica",
+   "lat": -77.85,
+   "lon": 160.6,
+   "elev": 1300,
+   "status": "known",
+   "T_mean": -24,
+   "T_range": 15,
+   "precip": 10,
+   "ndvi": 0.0,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "ground_ice",
+    "regolith",
+    "polar_dark"
+   ],
+   "used_for": "Mars ground-ice & cold-desert analog"
+  },
+  {
+   "id": "MAUNAKEA",
+   "name": "Mauna Kea upper slopes",
+   "country": "USA",
+   "lat": 19.82,
+   "lon": -155.47,
+   "elev": 4000,
+   "status": "known",
+   "T_mean": 4,
+   "T_range": 15,
+   "precip": 250,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "regolith",
+    "ground_ice"
+   ],
+   "used_for": "PISCES ISRU tests; lunar simulant source"
+  },
+  {
+   "id": "LANZAROTE",
+   "name": "Lanzarote - Timanfaya & La Corona tube",
+   "country": "Spain",
+   "lat": 29.0,
+   "lon": -13.75,
+   "elev": 300,
+   "status": "known",
+   "T_mean": 20,
+   "T_range": 15,
+   "precip": 140,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "ESA PANGAEA astronaut geology training"
+  },
+  {
+   "id": "RIOTINTO",
+   "name": "Rio Tinto",
+   "country": "Spain",
+   "lat": 37.72,
+   "lon": -6.56,
+   "elev": 400,
+   "status": "known",
+   "T_mean": 17,
+   "T_range": 20,
+   "precip": 600,
+   "ndvi": 0.3,
+   "flags": [
+    "evaporites",
+    "clays_sediments"
+   ],
+   "used_for": "Acidic sulfate (jarosite) Mars analog; MARTE drilling"
+  },
+  {
+   "id": "MDRS",
+   "name": "Mars Desert Research Station, Hanksville",
+   "country": "USA",
+   "lat": 38.41,
+   "lon": -110.79,
+   "elev": 1350,
+   "status": "known",
+   "T_mean": 12,
+   "T_range": 25,
+   "precip": 150,
+   "ndvi": 0.08,
+   "flags": [
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Crew habitat simulations"
+  },
+  {
+   "id": "SVALBARD",
+   "name": "Svalbard - Bockfjorden volcanics",
+   "country": "Norway",
+   "lat": 79.45,
+   "lon": 13.4,
+   "elev": 100,
+   "status": "known",
+   "T_mean": -5,
+   "T_range": 5,
+   "precip": 300,
+   "ndvi": 0.1,
+   "flags": [
+    "basalt",
+    "ground_ice",
+    "polar_dark"
+   ],
+   "used_for": "AMASE instrument tests"
+  },
+  {
+   "id": "CRATERSMOON",
+   "name": "Craters of the Moon NM",
+   "country": "USA",
+   "lat": 43.42,
+   "lon": -113.52,
+   "elev": 1800,
+   "status": "known",
+   "T_mean": 7,
+   "T_range": 25,
+   "precip": 380,
+   "ndvi": 0.15,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "Apollo training; NASA FINESSE lava studies"
+  },
+  {
+   "id": "METEORCRATER",
+   "name": "Meteor (Barringer) Crater",
+   "country": "USA",
+   "lat": 35.03,
+   "lon": -111.02,
+   "elev": 1700,
+   "status": "known",
+   "T_mean": 13,
+   "T_range": 25,
+   "precip": 230,
+   "ndvi": 0.1,
+   "flags": [
+    "impact",
+    "regolith"
+   ],
+   "used_for": "Apollo crater geology training"
+  },
+  {
+   "id": "HOLUHRAUN",
+   "name": "Holuhraun lava field",
+   "country": "Iceland",
+   "lat": 64.87,
+   "lon": -16.83,
+   "elev": 750,
+   "status": "known",
+   "T_mean": -2,
+   "T_range": 8,
+   "precip": 400,
+   "ndvi": 0.02,
+   "flags": [
+    "basalt",
+    "clays_sediments",
+    "regolith",
+    "ground_ice"
+   ],
+   "used_for": "NASA SAND/RISE2 rover tests"
+  },
+  {
+   "id": "KILAUEA",
+   "name": "Kilauea - Ka'u Desert",
+   "country": "USA",
+   "lat": 19.35,
+   "lon": -155.35,
+   "elev": 1000,
+   "status": "known",
+   "T_mean": 18,
+   "T_range": 12,
+   "precip": 900,
+   "ndvi": 0.1,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "Artemis geology training"
+  },
+  {
+   "id": "AXELHEIBERG",
+   "name": "Axel Heiberg - Lost Hammer spring",
+   "country": "Canada",
+   "lat": 79.08,
+   "lon": -90.35,
+   "elev": 600,
+   "status": "known",
+   "T_mean": -15,
+   "T_range": 6,
+   "precip": 100,
+   "ndvi": 0.03,
+   "flags": [
+    "evaporites",
+    "ground_ice",
+    "polar_dark"
+   ],
+   "used_for": "Cold saline spring (Europa/Mars brines)"
+  },
+  {
+   "id": "LAVABEDS",
+   "name": "Lava Beds NM (ice caves)",
+   "country": "USA",
+   "lat": 41.71,
+   "lon": -121.51,
+   "elev": 1400,
+   "status": "known",
+   "T_mean": 9,
+   "T_range": 20,
+   "precip": 380,
+   "ndvi": 0.2,
+   "flags": [
+    "basalt",
+    "caves",
+    "ground_ice"
+   ],
+   "used_for": "NASA BRAILLE cave robotics"
+  },
+  {
+   "id": "PILBARA",
+   "name": "Pilbara - Dresser Formation",
+   "country": "Australia",
+   "lat": -21.15,
+   "lon": 119.42,
+   "elev": 300,
+   "status": "known",
+   "T_mean": 27,
+   "T_range": 18,
+   "precip": 300,
+   "ndvi": 0.15,
+   "flags": [
+    "basalt",
+    "clays_sediments"
+   ],
+   "used_for": "Early-life biosignatures for Mars sample science"
+  },
+  {
+   "id": "LUT",
+   "name": "Lut Desert - Gandom Beryan basalt plateau",
+   "country": "Iran",
+   "lat": 30.4,
+   "lon": 59.05,
+   "elev": 400,
+   "status": "new",
+   "T_mean": 28,
+   "T_range": 40,
+   "precip": 30,
+   "ndvi": 0.0,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "Hottest LST on Earth (MODIS); yardangs like Medusae Fossae"
+  },
+  {
+   "id": "DALLOL",
+   "name": "Danakil Depression - Dallol",
+   "country": "Ethiopia",
+   "lat": 14.24,
+   "lon": 40.3,
+   "elev": -120,
+   "status": "new",
+   "T_mean": 34,
+   "T_range": 15,
+   "precip": 100,
+   "ndvi": 0.02,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "clays_sediments"
+   ],
+   "used_for": "Hyper-saline, acidic hydrothermal; polyextreme habitability"
+  },
+  {
+   "id": "UMMJIRSAN",
+   "name": "Harrat Khaybar - Umm Jirsan lava tube",
+   "country": "Saudi Arabia",
+   "lat": 25.58,
+   "lon": 39.6,
+   "elev": 1000,
+   "status": "new",
+   "T_mean": 24,
+   "T_range": 25,
+   "precip": 70,
+   "ndvi": 0.02,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "1.5 km lava tube in hyper-arid basalt; not used as analog yet"
+  },
+  {
+   "id": "PINACATE",
+   "name": "El Pinacate volcanic field",
+   "country": "Mexico",
+   "lat": 31.77,
+   "lon": -113.5,
+   "elev": 600,
+   "status": "new",
+   "T_mean": 23,
+   "T_range": 25,
+   "precip": 90,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "Apollo-era training, since lapsed; maar craters and dunes"
+  },
+  {
+   "id": "QAIDAM",
+   "name": "Qaidam Basin - Dalangtan playa",
+   "country": "China",
+   "lat": 38.5,
+   "lon": 91.5,
+   "elev": 2800,
+   "status": "new",
+   "T_mean": 3,
+   "T_range": 25,
+   "precip": 20,
+   "ndvi": 0.0,
+   "flags": [
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Sulfate/chloride salts + yardangs at altitude"
+  },
+  {
+   "id": "PAJONALES",
+   "name": "Salar de Pajonales (Altiplano)",
+   "country": "Chile",
+   "lat": -25.15,
+   "lon": -68.83,
+   "elev": 3540,
+   "status": "new",
+   "T_mean": 5,
+   "T_range": 30,
+   "precip": 50,
+   "ndvi": 0.01,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "Gypsum domes, extreme UV, thin-air conditions"
+  },
+  {
+   "id": "NAMIB",
+   "name": "Namib gravel plains - Gobabeb",
+   "country": "Namibia",
+   "lat": -23.56,
+   "lon": 15.04,
+   "elev": 400,
+   "status": "new",
+   "T_mean": 21,
+   "T_range": 20,
+   "precip": 25,
+   "ndvi": 0.02,
+   "flags": [
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "Fog-fed hyper-arid desert; gypsum crusts"
+  },
+  {
+   "id": "TIBESTI",
+   "name": "Tibesti - Emi Koussi caldera",
+   "country": "Chad",
+   "lat": 19.79,
+   "lon": 18.55,
+   "elev": 3400,
+   "status": "new",
+   "T_mean": 14,
+   "T_range": 25,
+   "precip": 50,
+   "ndvi": 0.01,
+   "flags": [
+    "basalt",
+    "regolith"
+   ],
+   "used_for": "Shield-volcano caldera in desert, Tharsis-like"
+  },
+  {
+   "id": "GOBI",
+   "name": "Gobi - Khermen Tsav red beds",
+   "country": "Mongolia",
+   "lat": 43.47,
+   "lon": 99.83,
+   "elev": 1300,
+   "status": "new",
+   "T_mean": 3,
+   "T_range": 30,
+   "precip": 80,
+   "ndvi": 0.03,
+   "flags": [
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Cold desert with layered red sediments"
+  },
+  {
+   "id": "WADIRUM",
+   "name": "Wadi Rum",
+   "country": "Jordan",
+   "lat": 29.57,
+   "lon": 35.42,
+   "elev": 900,
+   "status": "new",
+   "T_mean": 19,
+   "T_range": 20,
+   "precip": 40,
+   "ndvi": 0.02,
+   "flags": [
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Red sandstone desert (mostly film use so far)"
+  },
+  {
+   "id": "UNDARA",
+   "name": "Undara lava tubes",
+   "country": "Australia",
+   "lat": -18.25,
+   "lon": 144.6,
+   "elev": 800,
+   "status": "new",
+   "T_mean": 22,
+   "T_range": 15,
+   "precip": 750,
+   "ndvi": 0.4,
+   "flags": [
+    "basalt",
+    "caves"
+   ],
+   "used_for": "Large lava-tube system (vegetation lowers score)"
+  },
+  {
+   "id": "TOLBACHIK",
+   "name": "Tolbachik lava fields",
+   "country": "Russia",
+   "lat": 55.83,
+   "lon": 160.33,
+   "elev": 1000,
+   "status": "new",
+   "T_mean": -3,
+   "T_range": 10,
+   "precip": 900,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "ground_ice",
+    "regolith"
+   ],
+   "used_for": "Fresh 2012-13 basalt flows on permafrost"
+  },
+  {
+   "id": "EREBUS",
+   "name": "Mount Erebus fumarolic ice caves",
+   "country": "Antarctica",
+   "lat": -77.53,
+   "lon": 167.15,
+   "elev": 3400,
+   "status": "new",
+   "T_mean": -30,
+   "T_range": 10,
+   "precip": 50,
+   "ndvi": 0.0,
+   "flags": [
+    "basalt",
+    "caves",
+    "ground_ice",
+    "polar_dark"
+   ],
+   "used_for": "Dark, cold caves: lunar polar cave/cold-trap proxy"
+  },
+  {
+   "id": "LONAR",
+   "name": "Lonar Crater",
+   "country": "India",
+   "lat": 19.98,
+   "lon": 76.51,
+   "elev": 480,
+   "status": "new",
+   "T_mean": 26,
+   "T_range": 15,
+   "precip": 750,
+   "ndvi": 0.35,
+   "flags": [
+    "basalt",
+    "impact",
+    "evaporites"
+   ],
+   "used_for": "Impact crater in basalt (Moon/Mars-like target rock)"
+  },
+  {
+   "id": "KAMIL",
+   "name": "Kamil Crater",
+   "country": "Egypt",
+   "lat": 22.02,
+   "lon": 26.09,
+   "elev": 600,
+   "status": "new",
+   "T_mean": 26,
+   "T_range": 22,
+   "precip": 1,
+   "ndvi": 0.0,
+   "flags": [
+    "impact",
+    "regolith"
+   ],
+   "used_for": "Pristine small crater in hyper-arid desert"
+  },
+  {
+   "id": "MISTASTIN",
+   "name": "Mistastin Lake crater",
+   "country": "Canada",
+   "lat": 55.88,
+   "lon": -63.31,
+   "elev": 350,
+   "status": "new",
+   "T_mean": -4,
+   "T_range": 8,
+   "precip": 800,
+   "ndvi": 0.4,
+   "flags": [
+    "anorthosite",
+    "impact"
+   ],
+   "used_for": "Impact into anorthosite: lunar highland analog"
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+﻿Source,Agency,Data type,Access,Potential project use,URL,Next action
+RADARSAT-1 Archive,CSA,Historical SAR imagery,Open archive; free download,Surface texture; radar backscatter; terrain context,https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1,Check coverage for selected sites
+RADARSAT Constellation Mission (RCM),CSA,SAR imagery,Some public products; EODMS registration and restrictions,Radar imaging and environmental monitoring,https://www.asc-csa.gc.ca/eng/satellites/radarsat/access-to-data/about.asp,Verify public availability and coverage
+SAR Python Tutorial,CSA,Python / QGIS processing guide,Public GitHub repository,Learn SAR visualization and processing,https://github.com/asc-csa/Synthetic_Aperture_Radar_Tutorial,Run a sample notebook

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+node_modules/
+dist/
+.DS_Store
+*.zip
+*.tiff
+*.tif
+*.jp2
+*.xls
+LOLA_South Pole.csv
+MOLA Mars Global.csv

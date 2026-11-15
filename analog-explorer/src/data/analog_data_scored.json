@@ -1,0 +1,1426 @@
+{
+ "flags": [
+  "basalt",
+  "anorthosite",
+  "impact",
+  "evaporites",
+  "clays_sediments",
+  "ground_ice",
+  "caves",
+  "regolith",
+  "polar_dark"
+ ],
+ "earth_bounds": {
+  "T_mean": [
+   -55,
+   35
+  ],
+  "T_range": [
+   0,
+   45
+  ]
+ },
+ "scales": {
+  "T_mean": 20,
+  "T_range": 12,
+  "logp": 0.8,
+  "ndvi": 0.12
+ },
+ "climate_weights": {
+  "T_mean": 1,
+  "T_range": 1,
+  "logp": 1.5,
+  "ndvi": 1.5
+ },
+ "targets": [
+  {
+   "id": "MOON_SP",
+   "body": "Moon",
+   "name": "Lunar South Pole (Shackleton rim + cold traps)",
+   "lat": -89.9,
+   "lon": 0.0,
+   "T_mean": -170,
+   "T_range": 60,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "anorthosite",
+    "impact",
+    "ground_ice",
+    "regolith",
+    "polar_dark"
+   ],
+   "source": "LRO Diviner polar GDR (PSRs ~25-40 K, Paige et al. 2010); LOLA DEM; LEND/Mini-RF ice",
+   "note": "Artemis landing region. Earth cannot match the cold: score uses clamped targets.",
+   "terrain": {
+    "elevation_m": 1338,
+    "mean_slope_deg": 29.6,
+    "pct_under_8deg": 4.8,
+    "relief_m": 5824,
+    "roughness_m": 1786,
+    "radius_km": 10.0,
+    "map_x": 0.5015,
+    "map_y": 0.482,
+    "extent_km": 160,
+    "source": "LRO LOLA LDEM 240 m polar (NASA PDS)",
+    "sunlight_pct": 18.7,
+    "psr_pct": 21.4,
+    "ice_km": 2.0
+   }
+  },
+  {
+   "id": "MOON_PIT",
+   "body": "Moon",
+   "name": "Mare Tranquillitatis pit (lava-tube skylight)",
+   "lat": 8.33,
+   "lon": 33.22,
+   "T_mean": -23,
+   "T_range": 300,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "source": "LRO Diviner (Horvath et al. 2022: pit interior ~17 C stable vs surface -173..+127 C); LROC NAC",
+   "note": "Habitat-in-a-cave concept."
+  },
+  {
+   "id": "MOON_HADLEY",
+   "body": "Moon",
+   "name": "Hadley Rille / Apollo 15 (mare basalt, lava channel)",
+   "lat": 26.13,
+   "lon": 3.63,
+   "T_mean": -30,
+   "T_range": 280,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "impact",
+    "regolith"
+   ],
+   "source": "LRO Diviner; LOLA; LROC NAC; Apollo 15 samples (PDS Geosciences)",
+   "note": "Mare basalt plains next to Imbrium basin rim."
+  },
+  {
+   "id": "MARS_JEZERO",
+   "body": "Mars",
+   "name": "Jezero Crater (delta, Perseverance)",
+   "lat": 18.38,
+   "lon": 77.58,
+   "T_mean": -55,
+   "T_range": 70,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "impact",
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "source": "Mars 2020 MEDA (PDS Atmospheres); CRISM clays/carbonates; HiRISE/CTX DEM",
+   "note": "Ancient lake delta; biosignature target.",
+   "terrain": {
+    "elevation_m": -2651,
+    "pressure_pa": 775,
+    "relief_m": 943,
+    "roughness_m": 315,
+    "mean_slope_deg": 1.12,
+    "elev_percentile": 34.8,
+    "cells": 39,
+    "source": "MGS MOLA MEGDR 0.25 deg (NASA PDS)"
+   }
+  },
+  {
+   "id": "MARS_GALE",
+   "body": "Mars",
+   "name": "Gale Crater (Mount Sharp, Curiosity)",
+   "lat": -4.59,
+   "lon": 137.44,
+   "T_mean": -50,
+   "T_range": 85,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "impact",
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "source": "MSL REMS ground temp (PDS Atmospheres); CheMin mineralogy; HiRISE",
+   "note": "Layered lake sediments, sulfates, clays.",
+   "terrain": {
+    "elevation_m": -4458,
+    "pressure_pa": 911,
+    "relief_m": 3137,
+    "roughness_m": 1129,
+    "mean_slope_deg": 3.72,
+    "elev_percentile": 10.8,
+    "cells": 37,
+    "source": "MGS MOLA MEGDR 0.25 deg (NASA PDS)"
+   }
+  },
+  {
+   "id": "MARS_ARCADIA",
+   "body": "Mars",
+   "name": "Arcadia Planitia (shallow ground ice)",
+   "lat": 40.0,
+   "lon": -160.0,
+   "T_mean": -70,
+   "T_range": 70,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "ground_ice",
+    "regolith"
+   ],
+   "source": "SWIM ice-consistency maps (PSI/NASA); SHARAD radar; MCS/TES temps",
+   "note": "Leading candidate for a crewed base: water ice within ~1 m.",
+   "terrain": {
+    "elevation_m": -3920,
+    "pressure_pa": 868,
+    "relief_m": 37,
+    "roughness_m": 12,
+    "mean_slope_deg": 0.05,
+    "elev_percentile": 21.2,
+    "cells": 44,
+    "source": "MGS MOLA MEGDR 0.25 deg (NASA PDS)"
+   }
+  },
+  {
+   "id": "MARS_ARSIA",
+   "body": "Mars",
+   "name": "Arsia Mons north-flank cave skylights (\"Jeanne\")",
+   "lat": -5.636,
+   "lon": -118.741,
+   "T_mean": -75,
+   "T_range": 80,
+   "precip": 0,
+   "ndvi": 0,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "source": "THEMIS (Cushing et al. 2007, skylight \"Jeanne\" at 5.64 S, 241.26 E); HiRISE; MOLA",
+   "note": "Radiation-shielded habitat concept.",
+   "terrain": {
+    "elevation_m": 10084,
+    "pressure_pa": 246,
+    "relief_m": 1879,
+    "roughness_m": 587,
+    "mean_slope_deg": 1.29,
+    "elev_percentile": 99.9,
+    "cells": 37,
+    "source": "MGS MOLA MEGDR 0.25 deg (NASA PDS)"
+   }
+  }
+ ],
+ "sites": [
+  {
+   "id": "ATACAMA",
+   "name": "Atacama Desert - Yungay",
+   "country": "Chile",
+   "lat": -24.08,
+   "lon": -70.0,
+   "elev": 1000,
+   "status": "known",
+   "T_mean": 18.9,
+   "T_range": 28.6,
+   "precip": 7,
+   "ndvi": 0.02,
+   "flags": [
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "NASA ARADS rover drilling; Mars life-detection",
+   "estimate": {
+    "T_mean": 16,
+    "T_range": 30,
+    "precip": 1
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 36.7,
+    "MOON_PIT": 44.4,
+    "MOON_HADLEY": 43.8,
+    "MARS_JEZERO": 46.7,
+    "MARS_GALE": 46.7,
+    "MARS_ARCADIA": 43.3,
+    "MARS_ARSIA": 43.3
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "HAUGHTON",
+   "name": "Haughton Impact Crater, Devon Island",
+   "country": "Canada",
+   "lat": 75.38,
+   "lon": -89.68,
+   "elev": 200,
+   "status": "known",
+   "T_mean": -14.8,
+   "T_range": 6.3,
+   "precip": 310,
+   "ndvi": 0.05,
+   "flags": [
+    "impact",
+    "evaporites",
+    "ground_ice",
+    "regolith",
+    "polar_dark"
+   ],
+   "used_for": "Haughton-Mars Project; Moon/Mars EVA",
+   "estimate": {
+    "T_mean": -16,
+    "T_range": 8,
+    "precip": 150
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 55.3,
+    "MOON_PIT": 39.8,
+    "MOON_HADLEY": 54.7,
+    "MARS_JEZERO": 45.3,
+    "MARS_GALE": 46.0,
+    "MARS_ARCADIA": 48.6,
+    "MARS_ARSIA": 31.9
+   },
+   "best_match": "MOON_SP"
+  },
+  {
+   "id": "DEATHVALLEY",
+   "name": "Death Valley - Badwater & Ubehebe",
+   "country": "USA",
+   "lat": 36.25,
+   "lon": -116.83,
+   "elev": -60,
+   "status": "known",
+   "T_mean": 19.6,
+   "T_range": 25.7,
+   "precip": 124,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Rover tests; salt/playa Mars analog",
+   "estimate": {
+    "T_mean": 25,
+    "T_range": 30,
+    "precip": 60
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 27.0,
+    "MOON_PIT": 51.3,
+    "MOON_HADLEY": 50.8,
+    "MARS_JEZERO": 57.0,
+    "MARS_GALE": 57.0,
+    "MARS_ARCADIA": 50.3,
+    "MARS_ARSIA": 50.3
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "DRYVALLEYS",
+   "name": "McMurdo Dry Valleys - Beacon Valley",
+   "country": "Antarctica",
+   "lat": -77.85,
+   "lon": 160.6,
+   "elev": 1300,
+   "status": "known",
+   "T_mean": -35.2,
+   "T_range": 6.5,
+   "precip": 142,
+   "ndvi": 0.0,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "ground_ice",
+    "regolith",
+    "polar_dark"
+   ],
+   "used_for": "Mars ground-ice & cold-desert analog",
+   "estimate": {
+    "T_mean": -24,
+    "T_range": 15,
+    "precip": 10
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 51.6,
+    "MOON_PIT": 57.1,
+    "MOON_HADLEY": 58.5,
+    "MARS_JEZERO": 51.6,
+    "MARS_GALE": 53.1,
+    "MARS_ARCADIA": 71.6,
+    "MARS_ARSIA": 54.9
+   },
+   "best_match": "MARS_ARCADIA"
+  },
+  {
+   "id": "MAUNAKEA",
+   "name": "Mauna Kea upper slopes",
+   "country": "USA",
+   "lat": 19.82,
+   "lon": -155.47,
+   "elev": 4000,
+   "status": "known",
+   "T_mean": 22.4,
+   "T_range": 7.7,
+   "precip": 1610,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "regolith",
+    "ground_ice"
+   ],
+   "used_for": "PISCES ISRU tests; lunar simulant source",
+   "estimate": {
+    "T_mean": 4,
+    "T_range": 15,
+    "precip": 250
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 33.8,
+    "MOON_PIT": 47.9,
+    "MOON_HADLEY": 47.5,
+    "MARS_JEZERO": 33.8,
+    "MARS_GALE": 33.9,
+    "MARS_ARCADIA": 63.8,
+    "MARS_ARSIA": 47.2
+   },
+   "best_match": "MARS_ARCADIA"
+  },
+  {
+   "id": "LANZAROTE",
+   "name": "Lanzarote - Timanfaya & La Corona tube",
+   "country": "Spain",
+   "lat": 29.0,
+   "lon": -13.75,
+   "elev": 300,
+   "status": "known",
+   "T_mean": 21.3,
+   "T_range": 4.5,
+   "precip": 110,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "ESA PANGAEA astronaut geology training",
+   "estimate": {
+    "T_mean": 20,
+    "T_range": 15,
+    "precip": 140
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 24.4,
+    "MOON_PIT": 65.2,
+    "MOON_HADLEY": 48.1,
+    "MARS_JEZERO": 34.4,
+    "MARS_GALE": 34.4,
+    "MARS_ARCADIA": 47.7,
+    "MARS_ARSIA": 64.4
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "RIOTINTO",
+   "name": "Rio Tinto",
+   "country": "Spain",
+   "lat": 37.72,
+   "lon": -6.56,
+   "elev": 400,
+   "status": "known",
+   "T_mean": 18.8,
+   "T_range": 18.9,
+   "precip": 467,
+   "ndvi": 0.3,
+   "flags": [
+    "evaporites",
+    "clays_sediments"
+   ],
+   "used_for": "Acidic sulfate (jarosite) Mars analog; MARTE drilling",
+   "estimate": {
+    "T_mean": 17,
+    "T_range": 20,
+    "precip": 600
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 1.7,
+    "MOON_PIT": 2.8,
+    "MOON_HADLEY": 2.2,
+    "MARS_JEZERO": 21.7,
+    "MARS_GALE": 21.7,
+    "MARS_ARCADIA": 1.7,
+    "MARS_ARSIA": 1.7
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "MDRS",
+   "name": "Mars Desert Research Station, Hanksville",
+   "country": "USA",
+   "lat": 38.41,
+   "lon": -110.79,
+   "elev": 1350,
+   "status": "known",
+   "T_mean": 12.2,
+   "T_range": 21.9,
+   "precip": 241,
+   "ndvi": 0.08,
+   "flags": [
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Crew habitat simulations",
+   "estimate": {
+    "T_mean": 12,
+    "T_range": 25,
+    "precip": 150
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 23.8,
+    "MOON_PIT": 32.5,
+    "MOON_HADLEY": 31.5,
+    "MARS_JEZERO": 43.8,
+    "MARS_GALE": 43.8,
+    "MARS_ARCADIA": 30.5,
+    "MARS_ARSIA": 30.5
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "SVALBARD",
+   "name": "Svalbard - Bockfjorden volcanics",
+   "country": "Norway",
+   "lat": 79.45,
+   "lon": 13.4,
+   "elev": 100,
+   "status": "known",
+   "T_mean": -8.1,
+   "T_range": 4.1,
+   "precip": 664,
+   "ndvi": 0.1,
+   "flags": [
+    "basalt",
+    "ground_ice",
+    "polar_dark"
+   ],
+   "used_for": "AMASE instrument tests",
+   "estimate": {
+    "T_mean": -5,
+    "T_range": 5,
+    "precip": 300
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 31.3,
+    "MOON_PIT": 34.9,
+    "MOON_HADLEY": 32.8,
+    "MARS_JEZERO": 21.3,
+    "MARS_GALE": 21.8,
+    "MARS_ARCADIA": 44.6,
+    "MARS_ARSIA": 28.0
+   },
+   "best_match": "MARS_ARCADIA"
+  },
+  {
+   "id": "CRATERSMOON",
+   "name": "Craters of the Moon NM",
+   "country": "USA",
+   "lat": 43.42,
+   "lon": -113.52,
+   "elev": 1800,
+   "status": "known",
+   "T_mean": 5.2,
+   "T_range": 19.7,
+   "precip": 416,
+   "ndvi": 0.15,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "Apollo training; NASA FINESSE lava studies",
+   "estimate": {
+    "T_mean": 7,
+    "T_range": 25,
+    "precip": 380
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 18.1,
+    "MOON_PIT": 61.7,
+    "MOON_HADLEY": 43.5,
+    "MARS_JEZERO": 28.1,
+    "MARS_GALE": 28.2,
+    "MARS_ARCADIA": 41.5,
+    "MARS_ARSIA": 58.1
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "METEORCRATER",
+   "name": "Meteor (Barringer) Crater",
+   "country": "USA",
+   "lat": 35.03,
+   "lon": -111.02,
+   "elev": 1700,
+   "status": "known",
+   "T_mean": 11.6,
+   "T_range": 21.1,
+   "precip": 416,
+   "ndvi": 0.1,
+   "flags": [
+    "impact",
+    "regolith"
+   ],
+   "used_for": "Apollo crater geology training",
+   "estimate": {
+    "T_mean": 13,
+    "T_range": 25,
+    "precip": 230
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 32.1,
+    "MOON_PIT": 31.0,
+    "MOON_HADLEY": 46.5,
+    "MARS_JEZERO": 32.1,
+    "MARS_GALE": 32.1,
+    "MARS_ARCADIA": 28.8,
+    "MARS_ARSIA": 28.8
+   },
+   "best_match": "MOON_HADLEY"
+  },
+  {
+   "id": "HOLUHRAUN",
+   "name": "Holuhraun lava field",
+   "country": "Iceland",
+   "lat": 64.87,
+   "lon": -16.83,
+   "elev": 750,
+   "status": "known",
+   "T_mean": -4.4,
+   "T_range": 4.9,
+   "precip": 861,
+   "ndvi": 0.02,
+   "flags": [
+    "basalt",
+    "clays_sediments",
+    "regolith",
+    "ground_ice"
+   ],
+   "used_for": "NASA SAND/RISE2 rover tests",
+   "estimate": {
+    "T_mean": -2,
+    "T_range": 8,
+    "precip": 400
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 35.3,
+    "MOON_PIT": 54.7,
+    "MOON_HADLEY": 52.6,
+    "MARS_JEZERO": 45.3,
+    "MARS_GALE": 45.6,
+    "MARS_ARCADIA": 65.3,
+    "MARS_ARSIA": 48.6
+   },
+   "best_match": "MARS_ARCADIA"
+  },
+  {
+   "id": "KILAUEA",
+   "name": "Kilauea - Ka'u Desert",
+   "country": "USA",
+   "lat": 19.35,
+   "lon": -155.35,
+   "elev": 1000,
+   "status": "known",
+   "T_mean": 19.9,
+   "T_range": 11.5,
+   "precip": 1814,
+   "ndvi": 0.1,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "Artemis geology training",
+   "estimate": {
+    "T_mean": 18,
+    "T_range": 12,
+    "precip": 900
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 20.8,
+    "MOON_PIT": 61.8,
+    "MOON_HADLEY": 44.6,
+    "MARS_JEZERO": 30.8,
+    "MARS_GALE": 30.8,
+    "MARS_ARCADIA": 44.1,
+    "MARS_ARSIA": 60.8
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "AXELHEIBERG",
+   "name": "Axel Heiberg - Lost Hammer spring",
+   "country": "Canada",
+   "lat": 79.08,
+   "lon": -90.35,
+   "elev": 600,
+   "status": "known",
+   "T_mean": -20.8,
+   "T_range": 6.0,
+   "precip": 292,
+   "ndvi": 0.03,
+   "flags": [
+    "evaporites",
+    "ground_ice",
+    "polar_dark"
+   ],
+   "used_for": "Cold saline spring (Europa/Mars brines)",
+   "estimate": {
+    "T_mean": -15,
+    "T_range": 6,
+    "precip": 100
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 37.0,
+    "MOON_PIT": 24.7,
+    "MOON_HADLEY": 23.7,
+    "MARS_JEZERO": 27.0,
+    "MARS_GALE": 28.2,
+    "MARS_ARCADIA": 33.7,
+    "MARS_ARSIA": 17.0
+   },
+   "best_match": "MOON_SP"
+  },
+  {
+   "id": "LAVABEDS",
+   "name": "Lava Beds NM (ice caves)",
+   "country": "USA",
+   "lat": 41.71,
+   "lon": -121.51,
+   "elev": 1400,
+   "status": "known",
+   "T_mean": 9.0,
+   "T_range": 17.8,
+   "precip": 675,
+   "ndvi": 0.2,
+   "flags": [
+    "basalt",
+    "caves",
+    "ground_ice"
+   ],
+   "used_for": "NASA BRAILLE cave robotics",
+   "estimate": {
+    "T_mean": 9,
+    "T_range": 20,
+    "precip": 380
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 14.6,
+    "MOON_PIT": 40.6,
+    "MOON_HADLEY": 22.7,
+    "MARS_JEZERO": 14.6,
+    "MARS_GALE": 14.7,
+    "MARS_ARCADIA": 37.9,
+    "MARS_ARSIA": 37.9
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "PILBARA",
+   "name": "Pilbara - Dresser Formation",
+   "country": "Australia",
+   "lat": -21.15,
+   "lon": 119.42,
+   "elev": 300,
+   "status": "known",
+   "T_mean": 29.2,
+   "T_range": 24.0,
+   "precip": 405,
+   "ndvi": 0.15,
+   "flags": [
+    "basalt",
+    "clays_sediments"
+   ],
+   "used_for": "Early-life biosignatures for Mars sample science",
+   "estimate": {
+    "T_mean": 27,
+    "T_range": 18,
+    "precip": 300
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 9.1,
+    "MOON_PIT": 26.1,
+    "MOON_HADLEY": 25.9,
+    "MARS_JEZERO": 29.1,
+    "MARS_GALE": 29.1,
+    "MARS_ARCADIA": 25.8,
+    "MARS_ARSIA": 25.8
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "LUT",
+   "name": "Lut Desert - Gandom Beryan basalt plateau",
+   "country": "Iran",
+   "lat": 30.4,
+   "lon": 59.05,
+   "elev": 400,
+   "status": "new",
+   "T_mean": 28.0,
+   "T_range": 27.4,
+   "precip": 80,
+   "ndvi": 0.0,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "Hottest LST on Earth (MODIS); yardangs like Medusae Fossae",
+   "estimate": {
+    "T_mean": 28,
+    "T_range": 40,
+    "precip": 30
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 29.3,
+    "MOON_PIT": 53.0,
+    "MOON_HADLEY": 52.8,
+    "MARS_JEZERO": 49.3,
+    "MARS_GALE": 49.3,
+    "MARS_ARCADIA": 52.6,
+    "MARS_ARSIA": 52.6
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "DALLOL",
+   "name": "Danakil Depression - Dallol",
+   "country": "Ethiopia",
+   "lat": 14.24,
+   "lon": 40.3,
+   "elev": -120,
+   "status": "new",
+   "T_mean": 27.6,
+   "T_range": 22.2,
+   "precip": 449,
+   "ndvi": 0.02,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "clays_sediments"
+   ],
+   "used_for": "Hyper-saline, acidic hydrothermal; polyextreme habitability",
+   "estimate": {
+    "T_mean": 34,
+    "T_range": 15,
+    "precip": 100
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 16.5,
+    "MOON_PIT": 33.6,
+    "MOON_HADLEY": 33.3,
+    "MARS_JEZERO": 46.5,
+    "MARS_GALE": 46.5,
+    "MARS_ARCADIA": 33.2,
+    "MARS_ARSIA": 33.2
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "UMMJIRSAN",
+   "name": "Harrat Khaybar - Umm Jirsan lava tube",
+   "country": "Saudi Arabia",
+   "lat": 25.58,
+   "lon": 39.6,
+   "elev": 1000,
+   "status": "new",
+   "T_mean": 28.6,
+   "T_range": 29.2,
+   "precip": 26,
+   "ndvi": 0.02,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "1.5 km lava tube in hyper-arid basalt; not used as analog yet",
+   "estimate": {
+    "T_mean": 24,
+    "T_range": 25,
+    "precip": 70
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 32.0,
+    "MOON_PIT": 72.4,
+    "MOON_HADLEY": 55.5,
+    "MARS_JEZERO": 42.0,
+    "MARS_GALE": 42.0,
+    "MARS_ARCADIA": 55.4,
+    "MARS_ARSIA": 72.0
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "PINACATE",
+   "name": "El Pinacate volcanic field",
+   "country": "Mexico",
+   "lat": 31.77,
+   "lon": -113.5,
+   "elev": 600,
+   "status": "new",
+   "T_mean": 23.4,
+   "T_range": 22.5,
+   "precip": 139,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "caves",
+    "regolith"
+   ],
+   "used_for": "Apollo-era training, since lapsed; maar craters and dunes",
+   "estimate": {
+    "T_mean": 23,
+    "T_range": 25,
+    "precip": 90
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 25.9,
+    "MOON_PIT": 66.6,
+    "MOON_HADLEY": 49.5,
+    "MARS_JEZERO": 35.9,
+    "MARS_GALE": 35.9,
+    "MARS_ARCADIA": 49.2,
+    "MARS_ARSIA": 65.9
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "QAIDAM",
+   "name": "Qaidam Basin - Dalangtan playa",
+   "country": "China",
+   "lat": 38.5,
+   "lon": 91.5,
+   "elev": 2800,
+   "status": "new",
+   "T_mean": 4.6,
+   "T_range": 25.8,
+   "precip": 51,
+   "ndvi": 0.0,
+   "flags": [
+    "evaporites",
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Sulfate/chloride salts + yardangs at altitude",
+   "estimate": {
+    "T_mean": 3,
+    "T_range": 25,
+    "precip": 20
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 29.4,
+    "MOON_PIT": 39.8,
+    "MOON_HADLEY": 38.2,
+    "MARS_JEZERO": 49.4,
+    "MARS_GALE": 49.5,
+    "MARS_ARCADIA": 36.1,
+    "MARS_ARSIA": 36.1
+   },
+   "best_match": "MARS_GALE"
+  },
+  {
+   "id": "PAJONALES",
+   "name": "Salar de Pajonales (Altiplano)",
+   "country": "Chile",
+   "lat": -25.15,
+   "lon": -68.83,
+   "elev": 3540,
+   "status": "new",
+   "T_mean": 4.6,
+   "T_range": 29.9,
+   "precip": 135,
+   "ndvi": 0.01,
+   "flags": [
+    "basalt",
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "Gypsum domes, extreme UV, thin-air conditions",
+   "estimate": {
+    "T_mean": 5,
+    "T_range": 30,
+    "precip": 50
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 30.0,
+    "MOON_PIT": 57.1,
+    "MOON_HADLEY": 55.5,
+    "MARS_JEZERO": 50.0,
+    "MARS_GALE": 50.1,
+    "MARS_ARCADIA": 53.4,
+    "MARS_ARSIA": 53.4
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "NAMIB",
+   "name": "Namib gravel plains - Gobabeb",
+   "country": "Namibia",
+   "lat": -23.56,
+   "lon": 15.04,
+   "elev": 400,
+   "status": "new",
+   "T_mean": 24.0,
+   "T_range": 25.4,
+   "precip": 66,
+   "ndvi": 0.02,
+   "flags": [
+    "evaporites",
+    "regolith"
+   ],
+   "used_for": "Fog-fed hyper-arid desert; gypsum crusts",
+   "estimate": {
+    "T_mean": 21,
+    "T_range": 20,
+    "precip": 25
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 28.5,
+    "MOON_PIT": 35.8,
+    "MOON_HADLEY": 35.5,
+    "MARS_JEZERO": 38.5,
+    "MARS_GALE": 38.5,
+    "MARS_ARCADIA": 35.2,
+    "MARS_ARSIA": 35.2
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "TIBESTI",
+   "name": "Tibesti - Emi Koussi caldera",
+   "country": "Chad",
+   "lat": 19.79,
+   "lon": 18.55,
+   "elev": 3400,
+   "status": "new",
+   "T_mean": 24.3,
+   "T_range": 28.8,
+   "precip": 15,
+   "ndvi": 0.01,
+   "flags": [
+    "basalt",
+    "regolith"
+   ],
+   "used_for": "Shield-volcano caldera in desert, Tharsis-like",
+   "estimate": {
+    "T_mean": 14,
+    "T_range": 25,
+    "precip": 50
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 33.8,
+    "MOON_PIT": 57.7,
+    "MOON_HADLEY": 57.4,
+    "MARS_JEZERO": 43.8,
+    "MARS_GALE": 43.8,
+    "MARS_ARCADIA": 57.1,
+    "MARS_ARSIA": 57.1
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "GOBI",
+   "name": "Gobi - Khermen Tsav red beds",
+   "country": "Mongolia",
+   "lat": 43.47,
+   "lon": 99.83,
+   "elev": 1300,
+   "status": "new",
+   "T_mean": 8.9,
+   "T_range": 21.7,
+   "precip": 73,
+   "ndvi": 0.03,
+   "flags": [
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Cold desert with layered red sediments",
+   "estimate": {
+    "T_mean": 3,
+    "T_range": 30,
+    "precip": 80
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 27.1,
+    "MOON_PIT": 36.5,
+    "MOON_HADLEY": 35.2,
+    "MARS_JEZERO": 37.1,
+    "MARS_GALE": 37.2,
+    "MARS_ARCADIA": 33.8,
+    "MARS_ARSIA": 33.8
+   },
+   "best_match": "MARS_GALE"
+  },
+  {
+   "id": "WADIRUM",
+   "name": "Wadi Rum",
+   "country": "Jordan",
+   "lat": 29.57,
+   "lon": 35.42,
+   "elev": 900,
+   "status": "new",
+   "T_mean": 19.7,
+   "T_range": 26.9,
+   "precip": 40,
+   "ndvi": 0.02,
+   "flags": [
+    "clays_sediments",
+    "regolith"
+   ],
+   "used_for": "Red sandstone desert (mostly film use so far)",
+   "estimate": {
+    "T_mean": 19,
+    "T_range": 20,
+    "precip": 40
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 30.0,
+    "MOON_PIT": 37.7,
+    "MOON_HADLEY": 37.1,
+    "MARS_JEZERO": 40.0,
+    "MARS_GALE": 40.0,
+    "MARS_ARCADIA": 36.6,
+    "MARS_ARSIA": 36.6
+   },
+   "best_match": "MARS_JEZERO"
+  },
+  {
+   "id": "UNDARA",
+   "name": "Undara lava tubes",
+   "country": "Australia",
+   "lat": -18.25,
+   "lon": 144.6,
+   "elev": 800,
+   "status": "new",
+   "T_mean": 24.9,
+   "T_range": 19.7,
+   "precip": 843,
+   "ndvi": 0.4,
+   "flags": [
+    "basalt",
+    "caves"
+   ],
+   "used_for": "Large lava-tube system (vegetation lowers score)",
+   "estimate": {
+    "T_mean": 22,
+    "T_range": 15,
+    "precip": 750
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 1.2,
+    "MOON_PIT": 35.1,
+    "MOON_HADLEY": 18.1,
+    "MARS_JEZERO": 11.2,
+    "MARS_GALE": 11.2,
+    "MARS_ARCADIA": 17.8,
+    "MARS_ARSIA": 34.5
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "TOLBACHIK",
+   "name": "Tolbachik lava fields",
+   "country": "Russia",
+   "lat": 55.83,
+   "lon": 160.33,
+   "elev": 1000,
+   "status": "new",
+   "T_mean": -6.8,
+   "T_range": 10.8,
+   "precip": 1894,
+   "ndvi": 0.05,
+   "flags": [
+    "basalt",
+    "ground_ice",
+    "regolith"
+   ],
+   "used_for": "Fresh 2012-13 basalt flows on permafrost",
+   "estimate": {
+    "T_mean": -3,
+    "T_range": 10,
+    "precip": 900
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 34.5,
+    "MOON_PIT": 54.5,
+    "MOON_HADLEY": 52.4,
+    "MARS_JEZERO": 34.5,
+    "MARS_GALE": 34.9,
+    "MARS_ARCADIA": 64.5,
+    "MARS_ARSIA": 47.8
+   },
+   "best_match": "MARS_ARCADIA"
+  },
+  {
+   "id": "EREBUS",
+   "name": "Mount Erebus fumarolic ice caves",
+   "country": "Antarctica",
+   "lat": -77.53,
+   "lon": 167.15,
+   "elev": 3400,
+   "status": "new",
+   "T_mean": -19.9,
+   "T_range": 5.8,
+   "precip": 161,
+   "ndvi": 0.0,
+   "flags": [
+    "basalt",
+    "caves",
+    "ground_ice",
+    "polar_dark"
+   ],
+   "used_for": "Dark, cold caves: lunar polar cave/cold-trap proxy",
+   "estimate": {
+    "T_mean": -30,
+    "T_range": 10,
+    "precip": 50
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 37.5,
+    "MOON_PIT": 58.6,
+    "MOON_HADLEY": 40.8,
+    "MARS_JEZERO": 27.5,
+    "MARS_GALE": 28.6,
+    "MARS_ARCADIA": 50.9,
+    "MARS_ARSIA": 50.9
+   },
+   "best_match": "MOON_PIT"
+  },
+  {
+   "id": "LONAR",
+   "name": "Lonar Crater",
+   "country": "India",
+   "lat": 19.98,
+   "lon": 76.51,
+   "elev": 480,
+   "status": "new",
+   "T_mean": 27.1,
+   "T_range": 20.4,
+   "precip": 843,
+   "ndvi": 0.35,
+   "flags": [
+    "basalt",
+    "impact",
+    "evaporites"
+   ],
+   "used_for": "Impact crater in basalt (Moon/Mars-like target rock)",
+   "estimate": {
+    "T_mean": 26,
+    "T_range": 15,
+    "precip": 750
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 11.5,
+    "MOON_PIT": 18.6,
+    "MOON_HADLEY": 35.0,
+    "MARS_JEZERO": 31.5,
+    "MARS_GALE": 31.5,
+    "MARS_ARCADIA": 18.1,
+    "MARS_ARSIA": 18.1
+   },
+   "best_match": "MOON_HADLEY"
+  },
+  {
+   "id": "KAMIL",
+   "name": "Kamil Crater",
+   "country": "Egypt",
+   "lat": 22.02,
+   "lon": 26.09,
+   "elev": 600,
+   "status": "new",
+   "T_mean": 23.2,
+   "T_range": 24.8,
+   "precip": 0,
+   "ndvi": 0.0,
+   "flags": [
+    "impact",
+    "regolith"
+   ],
+   "used_for": "Pristine small crater in hyper-arid desert",
+   "estimate": {
+    "T_mean": 26,
+    "T_range": 22,
+    "precip": 1
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 52.4,
+    "MOON_PIT": 49.8,
+    "MOON_HADLEY": 66.0,
+    "MARS_JEZERO": 52.4,
+    "MARS_GALE": 52.4,
+    "MARS_ARCADIA": 49.1,
+    "MARS_ARSIA": 49.1
+   },
+   "best_match": "MOON_HADLEY"
+  },
+  {
+   "id": "MISTASTIN",
+   "name": "Mistastin Lake crater",
+   "country": "Canada",
+   "lat": 55.88,
+   "lon": -63.31,
+   "elev": 350,
+   "status": "new",
+   "T_mean": -6.1,
+   "T_range": 10.1,
+   "precip": 949,
+   "ndvi": 0.4,
+   "flags": [
+    "anorthosite",
+    "impact"
+   ],
+   "used_for": "Impact into anorthosite: lunar highland analog",
+   "estimate": {
+    "T_mean": -4,
+    "T_range": 8,
+    "precip": 800
+   },
+   "climate_source": "NASA POWER climatology (MERRA-2 / GPM IMERG)",
+   "scores": {
+    "MOON_SP": 20.7,
+    "MOON_PIT": 7.2,
+    "MOON_HADLEY": 21.8,
+    "MARS_JEZERO": 10.7,
+    "MARS_GALE": 11.1,
+    "MARS_ARCADIA": 0.7,
+    "MARS_ARSIA": 0.7
+   },
+   "best_match": "MOON_HADLEY"
+  }
+ ],
+ "landing_sites": {
+  "sites": [
+   {
+    "rank": 1,
+    "lat": -88.11,
+    "lon": 177.24,
+    "score": 68.5,
+    "sunlight_pct": 38.2,
+    "flat_pct": 91.4,
+    "ice_km": 0.3,
+    "elevation_m": 339,
+    "pole_km": 57.3,
+    "map_x": 0.518,
+    "map_y": 0.8589
+   },
+   {
+    "rank": 2,
+    "lat": -88.611,
+    "lon": 105.03,
+    "score": 65.3,
+    "sunlight_pct": 29.4,
+    "flat_pct": 100.0,
+    "ice_km": 1.5,
+    "elevation_m": -841,
+    "pole_km": 42.1,
+    "map_x": 0.7553,
+    "map_y": 0.5691
+   },
+   {
+    "rank": 3,
+    "lat": -88.645,
+    "lon": 73.89,
+    "score": 64.4,
+    "sunlight_pct": 30.5,
+    "flat_pct": 96.3,
+    "ice_km": 1.5,
+    "elevation_m": -916,
+    "pole_km": 41.1,
+    "map_x": 0.7477,
+    "map_y": 0.4294
+   },
+   {
+    "rank": 4,
+    "lat": -87.738,
+    "lon": 133.16,
+    "score": 62.7,
+    "sunlight_pct": 25.5,
+    "flat_pct": 96.3,
+    "ice_km": 1.2,
+    "elevation_m": 41,
+    "pole_km": 68.6,
+    "map_x": 0.8138,
+    "map_y": 0.7943
+   },
+   {
+    "rank": 5,
+    "lat": -87.759,
+    "lon": -69.65,
+    "score": 62.4,
+    "sunlight_pct": 34.3,
+    "flat_pct": 88.9,
+    "ice_km": 2.1,
+    "elevation_m": -2378,
+    "pole_km": 68.0,
+    "map_x": 0.1021,
+    "map_y": 0.3529
+   },
+   {
+    "rank": 6,
+    "lat": -88.285,
+    "lon": -26.15,
+    "score": 62.2,
+    "sunlight_pct": 19.1,
+    "flat_pct": 100.0,
+    "ice_km": 0.7,
+    "elevation_m": -1818,
+    "pole_km": 52.0,
+    "map_x": 0.3574,
+    "map_y": 0.2087
+   }
+  ],
+  "method": "2 km patches within 70 km of the pole; score = 0.45 sunlight + 0.35 flatness (<8 deg) + 0.2 closeness to permanent shadow",
+  "source": "LOLA 240 m DEM; Mazarico et al. 2011 average illumination & PSR maps (NASA GSFC PGDA)"
+ }
+}
